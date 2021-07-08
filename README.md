@@ -5,27 +5,33 @@
 
 ## About
 
-PistonQueue is a basic and easy to use queue plugin designed for anarchy and survival servers. This plugin is a fork of
-LeeesBungeeQueue but LeeesBungeeQueue was a designed more for the server 6b6t.org, so a fork of the plugin was created
+SebasQueue is a super basic and easy to use queue plugin designed for anarchy and survival servers. This plugin is a fork of
+PistonQueue because I just wanted to create my own, so a fork of the plugin was created
 that is designed for everyone and has more updates and support.
 
 ## Features
 
 ### Tablist
 
-A much more easy to use tablist compared to the old one.
+An easy tablist without complex things.
 
 ### Server ping information and a custom protocol
 
 ![Server ping with version](https://cdn.discordapp.com/attachments/722198099132678148/751842799682453606/unknown.png)
 
+example image from 5b5t.org (not SebasQueue property or affiliated)
+
 ### Custom Kick Messages
 
-For example the "You have lost connection to the server" message you see on the server 2b2t.org.
+For example the "You have lost connection to the server" message you see on the server 2b2t.org and the other copies of 2b2t.
 
-### Custom Server Offline Messages
+### Custom In-Server Offline Messages
 
-Instead of showing an error saying the server is down you can customize this message to whatever message you want.
+Instead of showing an error saying the server is down you can customize this message to whatever message you want in the server.
+
+Example:
+
+`&6 YOURSERVERNAME is down`
 
 ### Auth server support
 
@@ -35,8 +41,8 @@ queue!
 ## Setup
 
 [Wiki](https://github.com/AlexProgrammerDE/PistonQueue/wiki)
-Check out the wiki for a tutorial on how to setup PistonQueue.
-
-[![PistonDev Discord](https://discord.com/api/guilds/739784741124833301/widget.png?style=banner2)](https://discord.gg/CDrcxzH)
+Check out the wiki for a tutorial on how to setup SebasQueue, is the exact thing in PistonQueue, maybe adding some new features
 
 If you find any bugs or ways to improve the plugin open a issue on github.
+
+If you think I need to change something make a pull request.
