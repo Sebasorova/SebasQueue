@@ -1,8 +1,8 @@
 /*
  * #%L
- * PistonQueue
+ * SebasQueue
  * %%
- * Copyright (C) 2021 AlexProgrammerDE
+ * Copyright (C) 2021 AlexProgrammerDE & Sebastian Software
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,13 +17,13 @@
  * limitations under the License.
  * #L%
  */
-package net.pistonmaster.pistonqueue.bungee.utils;
+package me.Sebasorova.sebasqueue.bungee.utils;
 
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;
 import net.md_5.bungee.config.YamlConfiguration;
-import net.pistonmaster.pistonqueue.bungee.PistonQueue;
+import me.Sebasorova.sebasqueue.bungee.PistonQueue;
 
 import java.io.File;
 import java.io.IOException;
