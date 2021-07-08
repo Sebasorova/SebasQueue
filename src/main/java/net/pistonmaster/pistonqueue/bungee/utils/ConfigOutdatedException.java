@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package net.pistonmaster.pistonqueue.bungee.utils;
+package me.Sebasorova.sebasqueue.bungee.utils;
 
 public class ConfigOutdatedException extends Exception {
     public ConfigOutdatedException(String message) {
