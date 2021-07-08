@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package net.pistonmaster.pistonqueue.bungee;
+package me.Sebasorova.sebasqueue.bungee;
 
 import com.google.common.io.ByteArrayDataOutput;
 import com.google.common.io.ByteStreams;
@@ -31,11 +31,11 @@ import net.md_5.bungee.api.plugin.PluginManager;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;
 import net.md_5.bungee.config.YamlConfiguration;
-import net.pistonmaster.pistonqueue.bungee.commands.MainCommand;
-import net.pistonmaster.pistonqueue.bungee.hooks.PistonMOTDPlaceholder;
-import net.pistonmaster.pistonqueue.bungee.listeners.PistonListener;
-import net.pistonmaster.pistonqueue.bungee.listeners.QueueListener;
-import net.pistonmaster.pistonqueue.bungee.utils.*;
+import me.Sebasorova.sebasqueue.bungee.commands.MainCommand;
+import me.Sebasorova.sebasqueue.bungee.hooks.PistonMOTDPlaceholder;
+import me.Sebasorova.sebasqueue.bungee.listeners.PistonListener;
+import me.Sebasorova.sebasqueue.bungee.listeners.QueueListener;
+import me.Sebasorova.sebasqueue.bungee.utils.*;
 import org.bstats.bungeecord.Metrics;
 
 import java.io.File;
@@ -65,20 +65,20 @@ public final class PistonQueue extends Plugin {
         Logger logger = getLogger();
         PluginManager manager = getProxy().getPluginManager();
 
-        logger.info(ChatColor.BLUE + "Loading config");
+        logger.info(ChatColor.BLUE + "Loading config...");
         processConfig();
 
         StorageTool.setupTool(this);
         QueueType.initializeReservationSlots(this);
 
         logger.info(ChatColor.BLUE + "Looking for hooks");
-        if (getProxy().getPluginManager().getPlugin("PistonMOTD") != null) {
-            logger.info(ChatColor.BLUE + "Hooking into PistonMOTD");
+        if (getProxy().getPluginManager().getPlugin("SebasMOTD / PistonMOTD") != null) {
+            logger.info(ChatColor.BLUE + "Hooking into SebasMOTD / PistonMOTD");
             new PistonMOTDPlaceholder();
         }
 
         logger.info(ChatColor.BLUE + "Registering plugin messaging channel");
-        getProxy().registerChannel("piston:queue");
+        getProxy().registerChannel("sebas:queue");
 
         logger.info(ChatColor.BLUE + "Registering commands");
         manager.registerCommand(this, new MainCommand(this));
@@ -93,11 +93,11 @@ public final class PistonQueue extends Plugin {
         logger.info(ChatColor.BLUE + "Checking for update");
         new UpdateChecker(this, 83541).getVersion(version -> {
             if (this.getDescription().getVersion().equalsIgnoreCase(version)) {
-                logger.info(ChatColor.BLUE + "Your up to date!");
+                logger.info(ChatColor.BLUE + "This Plugin is Up to date!");
             } else {
-                logger.info(ChatColor.RED + "There is a update available.");
+                logger.info(ChatColor.RED + "There is a update available for this plugin.");
                 logger.info(ChatColor.RED + "Current version: " + this.getDescription().getVersion() + " New version: " + version);
-                logger.info(ChatColor.RED + "Download it at: https://www.spigotmc.org/resources/83541");
+                logger.info(ChatColor.RED + "Download it at: https://github.com/SebastianSoftware/SebasQueue/releases");
             }
         });
 
@@ -170,7 +170,7 @@ public final class PistonQueue extends Plugin {
 
                     queueListener.setMainOnline(true);
                 } catch (IOException e) {
-                    getLogger().warning("Main Server is down!!!");
+                    getLogger().warning("The Main Server is down!!!");
                     queueListener.setMainOnline(false);
                 }
             } else {
@@ -188,11 +188,11 @@ public final class PistonQueue extends Plugin {
                     s.close();
                     queueListener.setQueueOnline(true);
                 } catch (IOException e) {
-                    getLogger().warning("Queue Server is down!!!");
+                    getLogger().warning("The Queue Server is down!!!");
                     queueListener.setQueueOnline(false);
                 }
             } else {
-                getLogger().warning("Queue Server \"" + Config.QUEUESERVER + "\" not set up!!!");
+                getLogger().warning("The Queue Server \"" + Config.QUEUESERVER + "\" not set up!!!");
             }
         }, 500, Config.SERVERONLINECHECKDELAY, TimeUnit.MILLISECONDS);
 
@@ -371,7 +371,7 @@ public final class PistonQueue extends Plugin {
 
         networkPlayers.forEach(player -> {
             if (player.getServer() != null)
-                player.getServer().getInfo().sendData("piston:queue", out.toByteArray());
+                player.getServer().getInfo().sendData("sebas:queue", out.toByteArray());
         });
     }
 }
