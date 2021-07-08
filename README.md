@@ -1,7 +1,6 @@
-# PistonQueue
+# SebasQueue
 
-[![PistonDev Discord](https://discord.com/api/guilds/739784741124833301/embed.png)](https://discord.gg/CDrcxzH)
-[![](https://img.shields.io/badge/contributions-welcome-brightgreen)](https://github.com/AlexProgrammerDE/PistonQueue)
+[![](https://img.shields.io/badge/contributions-welcome-brightgreen)](https://github.com/SebastianSoftware/SebasQueue)
 
 ## About
 
