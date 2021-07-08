@@ -17,13 +17,13 @@
  * limitations under the License.
  * #L%
  */
-package net.pistonmaster.pistonqueue.bungee.utils;
+package me.Sebasorova.sebasqueue.bungee.utils;
 
 import lombok.Getter;
 import lombok.Setter;
 import net.md_5.bungee.api.config.ServerInfo;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
-import net.pistonmaster.pistonqueue.bungee.PistonQueue;
+import me.Sebasorova.sebasqueue.bungee.PistonQueue;
 
 import java.time.Duration;
 import java.time.Instant;
