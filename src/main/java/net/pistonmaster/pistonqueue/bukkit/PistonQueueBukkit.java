@@ -1,8 +1,8 @@
 /*
  * #%L
- * PistonQueue
+ * SebasQueue
  * %%
- * Copyright (C) 2021 AlexProgrammerDE
+ * Copyright (C) 2021 AlexProgrammerDE & SebastianSoftware
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,13 +17,13 @@
  * limitations under the License.
  * #L%
  */
-package net.pistonmaster.pistonqueue.bukkit;
+package me.Sebasorova.pistonqueue.bukkit;
 
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.World;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class PistonQueueBukkit extends JavaPlugin {
+public final class SebasorovaQueueBukkit extends JavaPlugin {
     protected boolean forceLocation = true;
 
     protected String forcedWorldName = "world_the_end";
@@ -42,9 +42,9 @@ public final class PistonQueueBukkit extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info(ChatColor.BLUE + "PistonQueue V" + getDescription().getVersion());
+        getLogger().info(ChatColor.BLUE + "SebasQueue V" + getDescription().getVersion());
 
-        getLogger().info(ChatColor.BLUE + "Loading config");
+        getLogger().info(ChatColor.BLUE + "Loading config...");
         saveDefaultConfig();
 
         forceLocation = getConfig().getBoolean("forceLocation");
