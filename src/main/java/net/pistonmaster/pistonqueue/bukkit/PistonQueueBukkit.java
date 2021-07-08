@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package me.Sebasorova.pistonqueue.bukkit;
+package me.Sebasorova.sebasqueue.bukkit;
 
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.World;
