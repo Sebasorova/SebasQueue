@@ -17,9 +17,9 @@
  * limitations under the License.
  * #L%
  */
-package net.pistonmaster.pistonqueue.bungee;
+package me.Sebasorova.sebasqueue.bungee;
 
-import net.pistonmaster.pistonqueue.bungee.utils.QueueType;
+import me.Sebasorova.sebasqueue.bungee.utils.QueueType;
 
 @SuppressWarnings({"unused"})
 public final class QueueAPI {
