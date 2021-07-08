@@ -39,7 +39,7 @@ queue!
 
 ## Setup
 
-[Wiki](https://github.com/AlexProgrammerDE/PistonQueue/wiki)
+[Wiki](https://github.com/SebastianSoftware/SebasQueue/wiki)
 Check out the wiki for a tutorial on how to setup SebasQueue, is the exact thing in PistonQueue, maybe adding some new features
 
 If you find any bugs or ways to improve the plugin open a issue on github.
