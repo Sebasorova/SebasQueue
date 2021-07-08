@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package net.pistonmaster.pistonqueue.bungee.utils;
+package me.Sebasorova.sebasqueue.bungee.utils;
 
 import java.util.List;
 
