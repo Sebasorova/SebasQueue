@@ -1,0 +1,26 @@
+canRegister():
+
+
+This method tells you whether the expansion can be registered with PlaceholderAPI. The register is set to true, so it is possible to use it.
+
+
+getAuthor():
+
+This method returns the author of the expansion, "AlexProgrammerDE." ⁤
+
+
+getIdentifier():
+
+This method returns a special code called "PistonQueue" for the expansion. ⁤
+
+
+getVersion():
+
+This method returns the version of the expansion, which is probably based on the plugin's description. ⁤
+
+
+⁤onRequest(OfflinePlayer player, String identifier): ⁤
+
+This method is used when someone asks for a placeholder. It asks for the player's name and identifier for the placeholder. ⁤
+
+In this method, you check the identifier and return the value for placeholders like "regular", priority, or veteran from the plugin. ⁤
